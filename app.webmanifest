@@ -23,5 +23,13 @@
             "type": "image/png",
             "purpose": "maskable"
         }
+    ],
+    "description": "This app lets you take notes",
+    "screenshots":[
+        {
+            "src": "icons/screenshot.png",
+            "sizes": "1170x2532",
+            "type": "image/png"
+        }
     ]
 }

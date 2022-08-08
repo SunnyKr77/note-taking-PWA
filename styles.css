@@ -1,11 +1,11 @@
 body {
     --color-back: white;
-    --color-title-back: red;
+    --color-title-back: #55887c;
     --color-title: #ffffff;
     --color-theme: #ffc252;
     --color-text: rgb(67, 66, 66);
     --color-icon-front: #55887c;
-    --color-toolbar: pink;
+    --color-toolbar: #ffc252;
     --color-toolbar-button: black;
 }
 
@@ -80,7 +80,10 @@ button {
     border: 2px solid var(--color-icon-front);
     user-select: none;
     -webkit-user-select: none;
+    cursor: pointer;
 }
+
+
 
 #notes {
     flex-flow: column;
@@ -113,12 +116,16 @@ body>#toolbar {
     background-color: var(--color-toolbar);
 }
 
-@media (display-mode: standalone) {
+@media (display-mode: standalone), (display-mode: minimal-ui) {
     body>#toolbar {
         padding: env(safe-area-inset-top) 
             env(safe-area-inset-right) 
             env(safe-area-inset-bottom) 
             env(safe-area-inset-left) !important;;
+    }
+
+    #itemInstall {
+        display: none;
     }
 }
 
